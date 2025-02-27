@@ -5,6 +5,9 @@ namespace AsynchronousProgramming;
 
 public static class IOTasks
 {
+    /// <summary>
+    /// Load method
+    /// </summary>
     public static void Load()
     {
         var task = Task.Factory.StartNew(() =>
@@ -15,6 +18,10 @@ public static class IOTasks
         Console.WriteLine(task.Result);
     }
 
+    /// <summary>
+    /// Get page method
+    /// </summary>
+    /// <returns></returns>
     private static string GetWebPage()
     {
         var request = new HttpClient();
