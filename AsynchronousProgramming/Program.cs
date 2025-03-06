@@ -2,8 +2,9 @@
 
 using AsynchronousProgramming;
 
-// ThreeWaysToStartAThread.Run();
-// UnderlyingThread.Run();
+// ThreeWaysToStartAThread.RunTask();
+// UnderlyingThread.RunTask();
 // IOTasks.Load();
 // TasksRelationship.Nested();
-Cancellation.Cancel();
+// Cancellation.Cancel();
+await Combinators.RunTask();
