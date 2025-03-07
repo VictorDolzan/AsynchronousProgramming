@@ -41,10 +41,30 @@ using AsynchronousProgramming;
 
 #region Pfx
 
+// var totalTime = new Stopwatch();
+// totalTime.Start();
+// var result = Pfx.InvokeSumParallel();
+// totalTime.Stop();
+// Console.WriteLine($"Result was {result}. The operation took {totalTime.ElapsedMilliseconds} ms");
+
+#endregion
+
+#region PfxFor
+
+// var totalTime = new Stopwatch();
+// totalTime.Start();
+// PfxFor.Para();
+// totalTime.Stop();
+// Console.WriteLine($"The operation took {totalTime.ElapsedMilliseconds} ms");
+
+#endregion
+
+#region PfxForEach
+
 var totalTime = new Stopwatch();
 totalTime.Start();
-var result = Pfx.InvokeSumParallel();
+PfxForEach.LoopStateBreak();
 totalTime.Stop();
-Console.WriteLine($"Result was {result}. The operation took {totalTime.ElapsedMilliseconds} ms");
+Console.WriteLine($"The operation took {totalTime.ElapsedMilliseconds} ms");
 
 #endregion
