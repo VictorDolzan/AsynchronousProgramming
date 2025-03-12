@@ -61,10 +61,16 @@ using AsynchronousProgramming;
 
 #region PfxForEach
 
-var totalTime = new Stopwatch();
-totalTime.Start();
-PfxForEach.LoopStateBreak();
-totalTime.Stop();
-Console.WriteLine($"The operation took {totalTime.ElapsedMilliseconds} ms");
+// var totalTime = new Stopwatch();
+// totalTime.Start();
+// PfxForEach.LoopStateBreak();
+// totalTime.Stop();
+// Console.WriteLine($"The operation took {totalTime.ElapsedMilliseconds} ms");
+
+#endregion
+
+#region Processes
+
+Processes.Demo();
 
 #endregion
